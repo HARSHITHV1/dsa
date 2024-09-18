@@ -37,7 +37,7 @@ class LinkedList:
         iterator = self.head
         while iterator.next:
             if iterator.next.value == value:
-                iterator.next = iterator.next.n   ext
+                iterator.next = iterator.next.next
                 if not iterator.next:
                     self.tail = iterator
                 return
@@ -69,12 +69,12 @@ class ShoppingCart:
         
 
 
-cart = ShoppingCart()
-cart.add_item("Apple")
-cart.add_item("Banana")
-cart.add_item("Orange")
-cart.toplsit('Grape')
-cart.display_cart()
-
-cart.remove_item("Orange")
-cart.display_cart()
+# cart = ShoppingCart()
+# cart.add_item("Apple")
+# cart.add_item("Banana")
+# cart.add_item("Orange")
+# cart.toplsit('Grape')
+# cart.display_cart()
+#
+# cart.remove_item("Orange")
+# cart.display_cart()
